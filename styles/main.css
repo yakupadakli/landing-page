@@ -47,3 +47,64 @@ p {
   cursor: pointer;
   background-color: rgb(22, 22, 22);
 }
+
+.text-content {
+  margin-top: 30px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.text-content p {
+  color: rgb(180, 180, 180);
+  font-family: "Comfortaa", cursive;
+  font-size: 1em;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.text-content h2 {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.text-content section {
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  display: inline-block;
+  color: rgb(98, 0, 255);
+  font-family: "Comfortaa", cursive;
+  font-size: 1.1em;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.inline-link {
+  color: rgb(98, 0, 255);
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-block;
+  color: rgb(180, 180, 180);
+  font-family: "Comfortaa", cursive;
+  font-size: 0.9em;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: white;
+}

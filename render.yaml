@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: yakupadakli-landing-page
+    runtime: node
+    buildCommand: curl -fsSL https://bun.sh/install | bash
+    startCommand: /opt/render/.bun/bin/bun run server.ts
+    envVars:
+      - key: PORT
+        value: 10000
