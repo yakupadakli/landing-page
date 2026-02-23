@@ -7,6 +7,7 @@ const CLEAN_URLS: Record<string, string> = {
 const SUBDOMAIN_OVERRIDES: Record<string, Record<string, string>> = {
   hangman: {
     "/privacy": "/privacy_hangman.html",
+    "/support": "/support_hangman.html",
   },
 };
 
