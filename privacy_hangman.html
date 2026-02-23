@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası – Hangman</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #1a1a2e;
+      --muted: #555;
+      --accent: #6366f1;
+      --border: #e5e7eb;
+      --card: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a2e;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #818cf8;
+        --border: #374151;
+        --card: #1f2937;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+    p, li { margin-bottom: 0.5rem; }
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    a { color: var(--accent); }
+    .footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gizlilik Politikası</h1>
+    <p class="subtitle">Son güncelleme: 23 Şubat 2026</p>
+
+    <p>
+      Bu gizlilik politikası, <strong>Hangman</strong> ("Uygulama") mobil uygulamasını kullanan
+      kullanıcıların ("siz") kişisel verilerinin nasıl toplandığını, kullanıldığını ve korunduğunu
+      açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.
+    </p>
+
+    <h2>1. Veri Sorumlusu</h2>
+    <p>
+      Yakup Adaklı<br>
+      E-posta: <a href="mailto:yakup.adakli@gmail.com">yakup.adakli@gmail.com</a><br>
+      Web: <a href="https://yakupadakli.com">yakupadakli.com</a>
+    </p>
+
+    <h2>2. Toplanan Veriler</h2>
+    <p>Uygulama, hesap oluşturmanızı veya kişisel bilgi girmenizi gerektirmez. Aşağıdaki veriler otomatik olarak toplanabilir:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Veri Türü</th>
+          <th>Amaç</th>
+          <th>Sağlayıcı</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cihaz bilgisi (model, OS versiyonu)</td>
+          <td>Hata tespiti ve uyumluluk</td>
+          <td>Firebase Crashlytics</td>
+        </tr>
+        <tr>
+          <td>Uygulama kullanım istatistikleri</td>
+          <td>Kullanıcı deneyimini iyileştirme</td>
+          <td>Firebase Analytics</td>
+        </tr>
+        <tr>
+          <td>Performans metrikleri</td>
+          <td>Uygulama hızını izleme</td>
+          <td>Firebase Performance</td>
+        </tr>
+        <tr>
+          <td>Reklam tanımlayıcısı (IDFA/GAID)</td>
+          <td>Kişiselleştirilmiş reklam sunma</td>
+          <td>Google AdMob</td>
+        </tr>
+        <tr>
+          <td>Oyun ilerleme verileri</td>
+          <td>Oyun durumunun kaydedilmesi</td>
+          <td>Cihaz üzerinde (yerel depolama)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. Verilerin Kullanım Amacı</h2>
+    <ul>
+      <li>Uygulamanın düzgün çalışmasını sağlamak</li>
+      <li>Hataları tespit edip düzeltmek</li>
+      <li>Uygulama performansını izlemek ve iyileştirmek</li>
+      <li>Reklam göstermek (Google AdMob aracılığıyla)</li>
+      <li>Kullanım istatistiklerini analiz etmek</li>
+    </ul>
+
+    <h2>4. Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanmaktadır. Her birinin kendi gizlilik politikası bulunur:</p>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Analytics, Crashlytics, Performance, Remote Config)</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a></li>
+    </ul>
+
+    <h2>5. Veri Saklama ve Güvenlik</h2>
+    <p>
+      Oyun ilerlemeniz (puan, yıldız, seviye durumu) yalnızca cihazınızda yerel olarak saklanır.
+      Analitik ve hata verileri Firebase sunucularında işlenir ve Google'ın güvenlik standartlarına
+      tabidir. Veriler, amacına hizmet ettiği süre boyunca saklanır.
+    </p>
+
+    <h2>6. Çocukların Gizliliği</h2>
+    <p>
+      Uygulama 4+ yaş grubuna uygundur. Bilerek çocuklardan kişisel bilgi toplamayız.
+      Bir çocuğun kişisel bilgi sağladığını fark edersek, bu verileri derhal sileriz.
+      Ebeveynler veya veliler bu konuda bizimle iletişime geçebilir.
+    </p>
+
+    <h2>7. Reklam ve İzleme</h2>
+    <p>
+      Uygulama, Google AdMob aracılığıyla reklam göstermektedir. AdMob, kişiselleştirilmiş reklam
+      sunmak için reklam tanımlayıcısını (IDFA/GAID) kullanabilir. iOS cihazlarda, App Tracking
+      Transparency (ATT) kapsamında izleme izni istenir. İzin vermezseniz, kişiselleştirilmemiş
+      reklamlar gösterilir.
+    </p>
+
+    <h2>8. Kullanıcı Hakları</h2>
+    <p>Aşağıdaki haklara sahipsiniz:</p>
+    <ul>
+      <li><strong>Veri silme:</strong> Uygulamayı kaldırarak tüm yerel verileri silebilirsiniz</li>
+      <li><strong>Reklam izleme:</strong> Cihaz ayarlarından reklam kişiselleştirmeyi kapatabilirsiniz</li>
+      <li><strong>Analitik:</strong> Cihaz ayarlarından analitik veri paylaşımını sınırlayabilirsiniz</li>
+      <li><strong>Bilgi talebi:</strong> Verileriniz hakkında bilgi almak için bizimle iletişime geçebilirsiniz</li>
+    </ul>
+
+    <h2>9. Politika Değişiklikleri</h2>
+    <p>
+      Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada yayınlanacak
+      ve "Son güncelleme" tarihi revize edilecektir. Önemli değişiklikler için uygulama içi bildirim
+      yapılabilir.
+    </p>
+
+    <h2>10. İletişim</h2>
+    <p>
+      Bu gizlilik politikası ile ilgili sorularınız için:
+    </p>
+    <p>
+      <strong>Yakup Adaklı</strong><br>
+      E-posta: <a href="mailto:yakup.adakli@gmail.com">yakup.adakli@gmail.com</a><br>
+      Web: <a href="https://yakupadakli.com">yakupadakli.com</a>
+    </p>
+
+    <div class="footer">
+      &copy; 2026 Yakup Adaklı. Tüm hakları saklıdır.
+    </div>
+  </div>
+</body>
+</html>
