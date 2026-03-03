@@ -2,6 +2,7 @@ const CLEAN_URLS: Record<string, string> = {
   "/": "/index.html",
   "/support": "/support.html",
   "/privacy": "/privacy.html",
+  "/app-ads.txt": "/app-ads.txt",
 };
 
 const SUBDOMAIN_OVERRIDES: Record<string, Record<string, string>> = {
